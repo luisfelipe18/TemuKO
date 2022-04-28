@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{710F3AD0-E063-490A-A7B4-B643FE7D56F7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PearlGuard</RootNamespace>
+    <ProjectName>TEMUKOACS</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+    <TargetName>TEMUKOACS</TargetName>
+    <OutDir>.\KnightOnlineEn\</OutDir>
+    <ExcludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(FxCopDir);$(MSBuild_ExecutablePath);$(VC_LibraryPath_x86);$(SystemRoot)</ExcludePath>
+    <IncludePath>$(DXSDK_DIR)Include;$(ProjectDir)Virtualizer\include;$(ProjectDir)DetourAPI\3.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib;$(ProjectDir)Virtualizer\lib;$(ProjectDir)DetourAPI\3.0\lib;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>TEMUKOACS</TargetName>
+    <TargetExt>.xasm</TargetExt>
+    <IncludePath>$(DXSDK_DIR)Include;$(ProjectDir)Virtualizer\include;$(ProjectDir)DetourAPI\3.0\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib;$(ProjectDir)Virtualizer\lib;$(ProjectDir)DetourAPI\3.0\lib;$(LibraryPath);$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(DXSDK_DIR)Include;$(ProjectDir)Virtualizer\include;$(ProjectDir)DetourAPI\3.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib;$(ProjectDir)Virtualizer\lib;$(ProjectDir)DetourAPI\3.0\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>TEMUKOACS</TargetName>
+    <TargetExt>.xsafe</TargetExt>
+    <OutDir>.\KnightOnlineEn\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>TEMUKOACS</TargetName>
+    <TargetExt>.xasm</TargetExt>
+    <IncludePath>$(DXSDK_DIR)Include;$(ProjectDir)Virtualizer\include;$(ProjectDir)DetourAPI\3.0\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib;$(ProjectDir)Virtualizer\lib;$(ProjectDir)DetourAPI\3.0\lib;$(LibraryPath);$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;WIN32;NDEBUG;PEARLGUARD_EXPORTS;_WINDOWS;_USRDLL;_N3GAME;DIRECTINPUT_VERSION=0x0800;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(ProjectDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <AdditionalDependencies>legacy_stdio_definitions.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;DSound.lib;dxguid.lib;DSetup.lib;Dinput8.lib;comctl32.lib;Imm32.lib;VMProtectSDK32.lib;va_g729.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;PEARLGUARD_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <ModuleDefinitionFile>Source.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;WIN32;PEARLGUARD_EXPORTS;_WINDOWS;_USRDLL;_N3GAME;DIRECTINPUT_VERSION=0x0800;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalOptions>/LD %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableUAC>false</EnableUAC>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <AdditionalDependencies>legacy_stdio_definitions.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;Dinput8.lib;DSetup.lib;dxguid.lib;comctl32.lib;Imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;PEARLGUARD_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <ModuleDefinitionFile>Source.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AntiDebugger.cpp" />
+    <ClCompile Include="AntiRE.cpp" />
+    <ClCompile Include="AntiVirtualHandler.cpp" />
+    <ClCompile Include="AudioRecorder.cpp" />
+    <ClCompile Include="CircularBuffer.cpp" />
+    <ClCompile Include="CLifeSkill.cpp" />
+    <ClCompile Include="CREvent.cpp" />
+    <ClCompile Include="CRRewards.cpp" />
+    <ClCompile Include="CSupport.cpp" />
+    <ClCompile Include="CTopLeft.cpp" />
+    <ClCompile Include="CVoiceSettings.cpp" />
+    <ClCompile Include="DropList.cpp" />
+    <ClCompile Include="DropListGroup.cpp" />
+    <ClCompile Include="DropResult.cpp" />
+    <ClCompile Include="DumpScan.cpp" />
+    <ClCompile Include="globals.cpp" />
+    <ClCompile Include="GMTools.cpp" />
+    <ClCompile Include="HDRReader.cpp" />
+    <ClCompile Include="HideCore.cpp" />
+    <ClCompile Include="TEMUKOACSSecurty.cpp" />
+    <ClCompile Include="TEMUKOACSHandler.cpp" />
+    <ClCompile Include="ItemOrg.cpp" />
+    <ClCompile Include="JobChange.cpp" />
+    <ClCompile Include="JoinBoard.cpp" />
+    <ClCompile Include="LicenseEngine.cpp" />
+    <ClCompile Include="LocalInput.cpp" />
+    <ClCompile Include="md5.cpp" />
+    <ClCompile Include="MerchantList.cpp" />
+    <ClCompile Include="MerchantManager.cpp" />
+    <ClCompile Include="MessageBoxUIF.cpp" />
+    <ClCompile Include="Models\MerchantInvSlot.cpp" />
+    <ClCompile Include="Models\MerchantSlot.cpp" />
+    <ClCompile Include="N3BASE\DFont.cpp" />
+    <ClCompile Include="N3BASE\LogWriter.cpp" />
+    <ClCompile Include="N3BASE\N3AlphaPrimitiveManager.cpp" />
+    <ClCompile Include="N3BASE\N3AnimControl.cpp" />
+    <ClCompile Include="N3BASE\N3AnimKey.cpp" />
+    <ClCompile Include="N3BASE\N3Base.cpp" />
+    <ClCompile Include="N3BASE\N3BaseFileAccess.cpp" />
+    <ClCompile Include="N3BASE\N3Camera.cpp" />
+    <ClCompile Include="N3BASE\N3Cloak.cpp" />
+    <ClCompile Include="N3BASE\N3ColorChange.cpp" />
+    <ClCompile Include="N3BASE\N3FXPMesh.cpp" />
+    <ClCompile Include="N3BASE\N3FXPMeshInstance.cpp" />
+    <ClCompile Include="N3BASE\N3FXShape.cpp" />
+    <ClCompile Include="N3BASE\N3GlobalEffect.cpp" />
+    <ClCompile Include="N3BASE\N3IMesh.cpp" />
+    <ClCompile Include="N3BASE\N3Joint.cpp" />
+    <ClCompile Include="N3BASE\N3Mesh.cpp" />
+    <ClCompile Include="N3BASE\N3PMesh.cpp" />
+    <ClCompile Include="N3BASE\N3PMeshCreate.cpp" />
+    <ClCompile Include="N3BASE\N3PMeshInstance.cpp" />
+    <ClCompile Include="N3BASE\N3Texture.cpp" />
+    <ClCompile Include="N3BASE\N3Transform.cpp" />
+    <ClCompile Include="N3BASE\N3TransformCollision.cpp" />
+    <ClCompile Include="N3BASE\N3UIArea.cpp" />
+    <ClCompile Include="N3BASE\N3UIBase.cpp" />
+    <ClCompile Include="N3BASE\N3UIButton.cpp" />
+    <ClCompile Include="N3BASE\N3UIEdit.cpp" />
+    <ClCompile Include="N3BASE\N3UIImage.cpp" />
+    <ClCompile Include="N3BASE\N3UIList.cpp" />
+    <ClCompile Include="N3BASE\N3UIProgress.cpp" />
+    <ClCompile Include="N3BASE\N3UIScrollBar.cpp" />
+    <ClCompile Include="N3BASE\N3UIStatic.cpp" />
+    <ClCompile Include="N3BASE\N3UIString.cpp" />
+    <ClCompile Include="N3BASE\N3UITooltip.cpp" />
+    <ClCompile Include="N3BASE\N3UITrackBar.cpp" />
+    <ClCompile Include="N3BASE\N3UIWndBase.cpp" />
+    <ClCompile Include="N3BASE\N3VMesh.cpp" />
+    <ClCompile Include="N3BASE\WaveFile.cpp" />
+    <ClCompile Include="N3TableBase.cpp" />
+    <ClCompile Include="N3UIIcon.cpp" />
+    <ClCompile Include="TEMUKO ACS.cpp" />
+    <ClCompile Include="TEMUKOACS.cpp" />
+    <ClCompile Include="PearlAPI.cpp" />
+    <ClCompile Include="PearlGui.cpp" />
+    <ClCompile Include="PlayerBase.cpp" />
+    <ClCompile Include="PowerUpStore.cpp" />
+    <ClCompile Include="SearchMonster.cpp" />
+    <ClCompile Include="SecurtyHandler.cpp" />
+    <ClCompile Include="SellModuleCheck.cpp" />
+    <ClCompile Include="SettingsManager.cpp" />
+    <ClCompile Include="SkillPreset.cpp" />
+    <ClCompile Include="SockEngine.cpp" />
+    <ClCompile Include="TEMUKOACSPacketHandler.cpp" />
+    <ClCompile Include="Splash.cpp" />
+    <ClCompile Include="StatPreset.cpp" />
+    <ClCompile Include="StringHelper.cpp" />
+    <ClCompile Include="TableManager.cpp" />
+    <ClCompile Include="TempItemList.cpp" />
+    <ClCompile Include="Texts.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="UIAnvil.cpp" />
+    <ClCompile Include="UIClanWindow.cpp" />
+    <ClCompile Include="UIEventNotice.cpp" />
+    <ClCompile Include="UIGenieSub.cpp" />
+    <ClCompile Include="UIHPBar.cpp" />
+    <ClCompile Include="UIImageTooltipDlg.cpp" />
+    <ClCompile Include="UIInventory.cpp" />
+    <ClCompile Include="UILogin.cpp" />
+    <ClCompile Include="UIManager.cpp" />
+    <ClCompile Include="UIMiniMenu.cpp" />
+    <ClCompile Include="UIMiniTaskbarMain.cpp" />
+    <ClCompile Include="UIParty.cpp" />
+    <ClCompile Include="UIPieceChange.cpp" />
+    <ClCompile Include="UISeedHelper.cpp" />
+    <ClCompile Include="UISkillTree.cpp" />
+    <ClCompile Include="UIState.cpp" />
+    <ClCompile Include="UIState1299.cpp" />
+    <ClCompile Include="UITargetBar.cpp" />
+    <ClCompile Include="UITaskbarMain.cpp" />
+    <ClCompile Include="UITooltip.cpp" />
+    <ClCompile Include="UITradeInventory.cpp" />
+    <ClCompile Include="UITradeItemDisplay.cpp" />
+    <ClCompile Include="UITradeItemDisplaySpecial.cpp" />
+    <ClCompile Include="UITradePrice.cpp" />
+    <ClCompile Include="UIVoteBoard.cpp" />
+    <ClCompile Include="UIWareHouseDlg.cpp" />
+    <ClCompile Include="UIWarp.cpp" />
+    <ClCompile Include="WaveCodec.cpp" />
+    <ClCompile Include="AudioListener.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AntiRE.h" />
+    <ClInclude Include="atomic.h" />
+    <ClInclude Include="AudioRecorder.h" />
+    <ClInclude Include="ByteBuffer.h" />
+    <ClInclude Include="CircularBuffer.h" />
+    <ClInclude Include="CLifeSkill.h" />
+    <ClInclude Include="CREvent.h" />
+    <ClInclude Include="CRRewards.h" />
+    <ClInclude Include="CSupport.h" />
+    <ClInclude Include="CTopLeft.h" />
+    <ClInclude Include="CustomStringList.h" />
+    <ClInclude Include="CVoiceSettings.h" />
+    <ClInclude Include="DropList.h" />
+    <ClInclude Include="DropListGroup.h" />
+    <ClInclude Include="DropResult.h" />
+    <ClInclude Include="encrypt.h" />
+    <ClInclude Include="ErrorMessage.h" />
+    <ClInclude Include="GMTools.h" />
+    <ClInclude Include="HDRReader.h" />
+    <ClInclude Include="HideCore.h" />
+    <ClInclude Include="ItemOrg.h" />
+    <ClInclude Include="JobChange.h" />
+    <ClInclude Include="JoinBoard.h" />
+    <ClInclude Include="LicenseEngine.h" />
+    <ClInclude Include="LocalInput.h" />
+    <ClInclude Include="md5.h" />
+    <ClInclude Include="MD6.h" />
+    <ClInclude Include="MerchantList.h" />
+    <ClInclude Include="MerchantManager.h" />
+    <ClInclude Include="MessageBoxUIF.h" />
+    <ClInclude Include="Models\MerchantInvSlot.h" />
+    <ClInclude Include="Models\MerchantSlot.h" />
+    <ClInclude Include="My_3DStruct.h" />
+    <ClInclude Include="N3BASE\DFont.h" />
+    <ClInclude Include="N3BASE\GameDef.h" />
+    <ClInclude Include="N3BASE\LogWriter.h" />
+    <ClInclude Include="N3BASE\N3AlphaPrimitiveManager.h" />
+    <ClInclude Include="N3BASE\N3AnimatedTexures.h" />
+    <ClInclude Include="N3BASE\N3AnimControl.h" />
+    <ClInclude Include="N3BASE\N3AnimKey.h" />
+    <ClInclude Include="N3BASE\N3Base.h" />
+    <ClInclude Include="N3BASE\N3BaseFileAccess.h" />
+    <ClInclude Include="N3BASE\N3Board.h" />
+    <ClInclude Include="N3BASE\N3Camera.h" />
+    <ClInclude Include="N3BASE\N3Cloak.h" />
+    <ClInclude Include="N3BASE\N3ColorChange.h" />
+    <ClInclude Include="N3BASE\N3EffectWave2.h" />
+    <ClInclude Include="N3BASE\N3Eng.h" />
+    <ClInclude Include="N3BASE\N3EngTool.h" />
+    <ClInclude Include="N3BASE\N3FXDef.h" />
+    <ClInclude Include="N3BASE\N3FXGroup.h" />
+    <ClInclude Include="N3BASE\N3FXMgr.h" />
+    <ClInclude Include="N3BASE\N3FXPlug.h" />
+    <ClInclude Include="N3BASE\N3FXPMesh.h" />
+    <ClInclude Include="N3BASE\N3FXPMeshInstance.h" />
+    <ClInclude Include="N3BASE\N3FXShape.h" />
+    <ClInclude Include="N3BASE\N3GlobalEffect.h" />
+    <ClInclude Include="N3BASE\N3GlobalEffectMng.h" />
+    <ClInclude Include="N3BASE\N3IME.h" />
+    <ClInclude Include="N3BASE\N3IMesh.h" />
+    <ClInclude Include="N3BASE\N3Joint.h" />
+    <ClInclude Include="N3BASE\N3Mesh.h" />
+    <ClInclude Include="N3BASE\N3Mng.h" />
+    <ClInclude Include="N3BASE\N3PMesh.h" />
+    <ClInclude Include="N3BASE\N3PMeshCreate.h" />
+    <ClInclude Include="N3BASE\N3PMeshInstance.h" />
+    <ClInclude Include="N3BASE\N3Scene.h" />
+    <ClInclude Include="N3BASE\N3Snd3dObj.h" />
+    <ClInclude Include="N3BASE\N3SndEng.h" />
+    <ClInclude Include="N3BASE\N3TableBase.h" />
+    <ClInclude Include="N3BASE\N3Texture.h" />
+    <ClInclude Include="N3BASE\N3Transform.h" />
+    <ClInclude Include="N3BASE\N3TransformCollision.h" />
+    <ClInclude Include="N3BASE\N3UIArea.h" />
+    <ClInclude Include="N3BASE\N3UIBase.h" />
+    <ClInclude Include="N3BASE\N3UIButton.h" />
+    <ClInclude Include="N3BASE\N3UIDBCLButton.h" />
+    <ClInclude Include="N3BASE\N3UIDef.h" />
+    <ClInclude Include="N3BASE\N3UIEdit.h" />
+    <ClInclude Include="N3BASE\N3UIIcon.h" />
+    <ClInclude Include="N3BASE\N3UIImage.h" />
+    <ClInclude Include="N3BASE\N3UIList.h" />
+    <ClInclude Include="N3BASE\N3UIManager.h" />
+    <ClInclude Include="N3BASE\N3UIProgress.h" />
+    <ClInclude Include="N3BASE\N3UIScrollBar.h" />
+    <ClInclude Include="N3BASE\N3UIStatic.h" />
+    <ClInclude Include="N3BASE\N3UIString.h" />
+    <ClInclude Include="N3BASE\N3UITooltip.h" />
+    <ClInclude Include="N3BASE\N3UITrackBar.h" />
+    <ClInclude Include="N3BASE\N3UIWndBase.h" />
+    <ClInclude Include="N3BASE\N3VMesh.h" />
+    <ClInclude Include="N3BASE\N3WorldBase.h" />
+    <ClInclude Include="N3BASE\N3WorldManager.h" />
+    <ClInclude Include="N3BASE\Pick.h" />
+    <ClInclude Include="N3BASE\StreamSoundObj.h" />
+    <ClInclude Include="N3BASE\WaveFile.h" />
+    <ClInclude Include="Packet.h" />
+    <ClInclude Include="TEMUKOACS Engine.h" />
+    <ClInclude Include="PearlAPI.h" />
+    <ClInclude Include="PearlGui.h" />
+    <ClInclude Include="PlayerBase.h" />
+    <ClInclude Include="PowerUpStore.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SearchMonster.h" />
+    <ClInclude Include="SecurtyHandler.h" />
+    <ClInclude Include="SettingsManager.h" />
+    <ClInclude Include="SkillPreset.h" />
+    <ClInclude Include="SockEngine.h" />
+    <ClInclude Include="SocketDefines.h" />
+    <ClInclude Include="Splash.h" />
+    <ClInclude Include="StatPreset.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StringHelper.h" />
+    <ClInclude Include="TableManager.h" />
+    <ClInclude Include="TempItemList.h" />
+    <ClInclude Include="Texts.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="types.h" />
+    <ClInclude Include="UIAnvil.h" />
+    <ClInclude Include="UIBase.h" />
+    <ClInclude Include="UIClanWindow.h" />
+    <ClInclude Include="UIEventNotice.h" />
+    <ClInclude Include="UIGenieSub.h" />
+    <ClInclude Include="UIHPBar.h" />
+    <ClInclude Include="UIImageTooltipDlg.h" />
+    <ClInclude Include="UIInventory.h" />
+    <ClInclude Include="UILogin.h" />
+    <ClInclude Include="UIManager.h" />
+    <ClInclude Include="UIMiniMenu.h" />
+    <ClInclude Include="UIMiniTaskbarMain.h" />
+    <ClInclude Include="UIParty.h" />
+    <ClInclude Include="UIPieceChange.h" />
+    <ClInclude Include="UISeedHelper.h" />
+    <ClInclude Include="UISkillTree.h" />
+    <ClInclude Include="UIState.h" />
+    <ClInclude Include="UIState1299.h" />
+    <ClInclude Include="UITargetBar.h" />
+    <ClInclude Include="UITaskbarMain.h" />
+    <ClInclude Include="UITooltip.h" />
+    <ClInclude Include="UITradeInventory.h" />
+    <ClInclude Include="UITradeItemDisplay.h" />
+    <ClInclude Include="UITradeItemDisplaySpecial.h" />
+    <ClInclude Include="UITradePrice.h" />
+    <ClInclude Include="UIVoteBoard.h" />
+    <ClInclude Include="UIWareHouseDlg.h" />
+    <ClInclude Include="UIWarp.h" />
+    <ClInclude Include="va_g729a.h" />
+    <ClInclude Include="WaveCodec.h" />
+    <ClInclude Include="AudioListener.h" />
+    <ClInclude Include="xorstr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

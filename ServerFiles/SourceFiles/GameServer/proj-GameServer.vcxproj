@@ -1,0 +1,892 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug-XP|Win32">
+      <Configuration>Debug-XP</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-XP|x64">
+      <Configuration>Debug-XP</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-XP|Win32">
+      <Configuration>Release-XP</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-XP|x64">
+      <Configuration>Release-XP</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{99006BDF-4BBD-4687-99C3-1424F32D95FC}</ProjectGuid>
+    <ProjectName>GameServer</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-XP|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-XP|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-XP|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <SpectreMitigation>Spectre</SpectreMitigation>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-XP|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-XP|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-XP|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug-XP|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug-XP|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\bin\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">$(SolutionDir)..\bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release-XP|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)..\ServerFiles\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-XP|Win32'">
+    <OutDir>$(SolutionDir)..\bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-XP|x64'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/GameServer.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;GAMESERVER;_DEBUG;_WINDOWS;_3DSERVER;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\Debug/GameServer.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalIncludeDirectories>D:\Knight Projeleri\Projeler\Knight Online Files\KnightOnlineServer\KOServer\scripting\Lua\src;$(SolutionDir)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;$(SolutionDir)Win32/$(Configuration)/Lua.lib;$(SolutionDir)Win32/$(Configuration)/shared.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapFileName>.\Debug/GameServer.map</MapFileName>
+      <SubSystem>NotSet</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/GameServer.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TypeLibraryName>.\Debug/GameServer.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <PreprocessorDefinitions>WIN32;GAMESERVER;_DEBUG;_WINDOWS;_3DSERVER;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapFileName>
+      </MapFileName>
+      <SubSystem>NotSet</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalDependencies>ws2_32.lib;$(SolutionDir)../ServerFiles/shared.lib;$(SolutionDir)../ServerFiles/Lua.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/GameServer.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-XP|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/GameServer.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;GAMESERVER;_DEBUG;_WINDOWS;_3DSERVER;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\Debug/GameServer.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(SolutionDir)../src/scripting/Lua/src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;$(SolutionDir)../bin/$(Configuration)/Lua.lib;$(SolutionDir)../bin/$(Configuration)/shared.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapFileName>.\Debug/GameServer.map</MapFileName>
+      <SubSystem>NotSet</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/GameServer.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-XP|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TypeLibraryName>.\Debug/GameServer.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;GAMESERVER;_DEBUG;_WINDOWS;_3DSERVER;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\Debug/GameServer.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(SolutionDir)../src/scripting/Lua/src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;$(SolutionDir)/x64/$(Configuration)/Lua.lib;$(SolutionDir)/x64/$(Configuration)/shared.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapFileName>.\Debug/GameServer.map</MapFileName>
+      <SubSystem>NotSet</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/GameServer.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/GameServer.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;GAMESERVER;NDEBUG;_WINDOWS;_3DSERVER;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/GameServer.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)../src/scripting/Lua/src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;$(SolutionDir)../bin/$(Configuration)/Lua.lib;$(SolutionDir)../bin/$(Configuration)/shared.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>NotSet</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/GameServer.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TypeLibraryName>.\Release/GameServer.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;GAMESERVER;NDEBUG;_WINDOWS;_3DSERVER;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/GameServer.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)../src/scripting/Lua/src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;$(SolutionDir)../bin/$(Configuration)/Lua.lib;$(SolutionDir)../bin/$(Configuration)/shared.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>NotSet</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/GameServer.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/GameServer.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;GAMESERVER;NDEBUG;_WINDOWS;_3DSERVER;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/GameServer.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)../src/scripting/Lua/src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;$(SolutionDir)../bin/$(Configuration)/Lua.lib;$(SolutionDir)../bin/$(Configuration)/shared.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/GameServer.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-XP|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TypeLibraryName>.\Release/GameServer.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;GAMESERVER;NDEBUG;_WINDOWS;_3DSERVER;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/GameServer.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)../src/scripting/Lua/src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;$(SolutionDir)../bin/$(Configuration)/Lua.lib;$(SolutionDir)../bin/$(Configuration)/shared.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/GameServer.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\N3BASE\N3ShapeMgr.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug-XP|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug-XP|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release-XP|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ArdreamEvent.cpp" />
+    <ClCompile Include="BaseEvent.cpp" />
+    <ClCompile Include="BifrostPieceSmashSystem.cpp" />
+    <ClCompile Include="BotHandler.cpp" />
+    <ClCompile Include="ChaosStone.cpp" />
+    <ClCompile Include="CollectionRaceSystem.cpp" />
+    <ClCompile Include="ColorSystemGameServer.cpp" />
+    <ClCompile Include="CraftingSystem.cpp" />
+    <ClCompile Include="CZEvent.cpp" />
+    <ClCompile Include="ExchangeSystemMain.cpp" />
+    <ClCompile Include="GameEventTimer.cpp" />
+    <ClCompile Include="GiveItemExchange.cpp" />
+    <ClCompile Include="GiveItemLuA.cpp" />
+    <ClCompile Include="AutoNotice.cpp" />
+    <ClCompile Include="ItemSmashSystem.cpp" />
+    <ClCompile Include="ItemUpgradeSystem.cpp" />
+    <ClCompile Include="md5.cpp" />
+    <ClCompile Include="MoralChecking.cpp" />
+    <ClCompile Include="PPCardProcess.cpp" />
+    <ClCompile Include="VanGuardEvent.cpp" />
+    <ClCompile Include="PetMainHandler.cpp" />
+    <ClCompile Include="KnightCape.cpp" />
+    <ClCompile Include="KnightRoyaleSystem.cpp" />
+    <ClCompile Include="KnightUserReturnSystem.cpp" />
+    <ClCompile Include="MiningExchange.cpp" />
+    <ClCompile Include="OtherExchange.cpp" />
+    <ClCompile Include="QuestDatabase.cpp" />
+    <ClCompile Include="TournamentSystem.cpp" />
+    <ClCompile Include="DungeonDefenceSystem.cpp" />
+    <ClCompile Include="JuraidBdwFragSystem.cpp" />
+    <ClCompile Include="NameChangeHandler.cpp" />
+    <ClCompile Include="DrakiTowerSystem.cpp" />
+    <ClCompile Include="NewPacketsNotice.cpp" />
+    <ClCompile Include="UserAbilityHandler.cpp" />
+    <ClCompile Include="AchieveHandler.cpp" />
+    <ClCompile Include="ArenaHandler.cpp" />
+    <ClCompile Include="AttackHandler.cpp" />
+    <ClCompile Include="BattleSystem.cpp" />
+    <ClCompile Include="BifrostSystem.cpp" />
+    <ClCompile Include="BundleSystem.cpp" />
+    <ClCompile Include="CastleSiegeWar.cpp" />
+    <ClCompile Include="CharacterSelectionHandler.cpp" />
+    <ClCompile Include="CharacterMovementHandler.cpp" />
+    <ClCompile Include="ChatHandler.cpp" />
+    <ClCompile Include="ChatRoomHandler.cpp" />
+    <ClCompile Include="ConsoleInputThread.cpp" />
+    <ClCompile Include="DatabaseThread.cpp" />
+    <ClCompile Include="DBAgent.cpp" />
+    <ClCompile Include="EventTrapSystem.cpp" />
+    <ClCompile Include="ForgettenTempleSystem.cpp" />
+    <ClCompile Include="FundamentalMethods.cpp" />
+    <ClCompile Include="GameServerDlg.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug-XP|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug-XP|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release-XP|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="EventSigningSystem.cpp" />
+    <ClCompile Include="FriendHandler.cpp" />
+    <ClCompile Include="GameEvent.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug-XP|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug-XP|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release-XP|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="GenderJobChangeHandler.cpp" />
+    <ClCompile Include="GenieHandler.cpp" />
+    <ClCompile Include="GMCommandsHandler.cpp" />
+    <ClCompile Include="HelperMethods.cpp" />
+    <ClCompile Include="ItemHandler.cpp" />
+    <ClCompile Include="KingSystem.cpp" />
+    <ClCompile Include="KnightCashSystem.cpp" />
+    <ClCompile Include="ArmyGuard.cpp" />
+    <ClCompile Include="KnightLogger.cpp" />
+    <ClCompile Include="Knights.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug-XP|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug-XP|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release-XP|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="KnightsAllianceHandler.cpp" />
+    <ClCompile Include="KnightsDatabaseHandler.cpp" />
+    <ClCompile Include="KnightsManager.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug-XP|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug-XP|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release-XP|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="LetterHandler.cpp" />
+    <ClCompile Include="LoginHandler.cpp" />
+    <ClCompile Include="LuaEngine.cpp" />
+    <ClCompile Include="lua_bindings.cpp" />
+    <ClCompile Include="MagicInstance.cpp" />
+    <ClCompile Include="MagicProcess.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug-XP|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug-XP|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release-XP|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Map.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug-XP|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug-XP|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release-XP|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="MerchantHandler.cpp" />
+    <ClCompile Include="MiningFishingSystem.cpp" />
+    <ClCompile Include="MonsterStoneSystem.cpp" />
+    <ClCompile Include="NationTransferHandler.cpp" />
+    <ClCompile Include="NpcEventSystem.cpp" />
+    <ClCompile Include="PremiumSystem.cpp" />
+    <ClCompile Include="RegionHandler.cpp" />
+    <ClCompile Include="ServerStartStopHandler.cpp" />
+    <ClCompile Include="SoccerSystem.cpp" />
+    <ClCompile Include="TowerTransformationProcess.cpp" />
+    <ClCompile Include="Npc.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug-XP|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug-XP|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release-XP|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="NPCHandler.cpp" />
+    <ClCompile Include="NpcThread.cpp" />
+    <ClCompile Include="PartyHandler.cpp" />
+    <ClCompile Include="PathFind.cpp" />
+    <ClCompile Include="QuestHandler.cpp" />
+    <ClCompile Include="Region.cpp" />
+    <ClCompile Include="RentalHandler.cpp" />
+    <ClCompile Include="LoadServerData.cpp" />
+    <ClCompile Include="SealHandler.cpp" />
+    <ClCompile Include="SheriffHandler.cpp" />
+    <ClCompile Include="ShoppingMallHandler.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release-XP|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug-XP|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug-XP|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="EventMainSystem.cpp" />
+    <ClCompile Include="TradeHandler.cpp" />
+    <ClCompile Include="UnderTheCastleSystem.cpp" />
+    <ClCompile Include="Unit.cpp" />
+    <ClCompile Include="User.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug-XP|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug-XP|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release-XP|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release-XP|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="UserChatEvent.cpp" />
+    <ClCompile Include="UserDailyOpSystem.cpp" />
+    <ClCompile Include="UserDurationSkillSystem.cpp" />
+    <ClCompile Include="UserGoldSystem.cpp" />
+    <ClCompile Include="UserHealtMagicSpSystem.cpp" />
+    <ClCompile Include="UserInfoSystem.cpp" />
+    <ClCompile Include="UserLevelExperienceSystem.cpp" />
+    <ClCompile Include="UserLoyaltySystem.cpp" />
+    <ClCompile Include="UserObjectSystem.cpp" />
+    <ClCompile Include="NewUserRankingSystem.cpp" />
+    <ClCompile Include="UserRebirthSystem.cpp" />
+    <ClCompile Include="UserRivalSystem.cpp" />
+    <ClCompile Include="UserSkillShortcutSystem.cpp" />
+    <ClCompile Include="UserSkillStatPointSystem.cpp" />
+    <ClCompile Include="UserSurroundingSystem.cpp" />
+    <ClCompile Include="VipWareHouse.cpp" />
+    <ClCompile Include="WareHouse.cpp" />
+    <ClCompile Include="ZoneChangeWarpHandler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\N3BASE\My_3DStruct.h" />
+    <ClInclude Include="..\N3BASE\N3ShapeMgr.h" />
+    <ClInclude Include="..\scripting\lua_helpers.h" />
+    <ClInclude Include="..\shared\database\AchieveCom.h" />
+    <ClInclude Include="..\shared\database\AchieveMain.h" />
+    <ClInclude Include="..\shared\database\AchieveMonster.h" />
+    <ClInclude Include="..\shared\database\AchieveNormal.h" />
+    <ClInclude Include="..\shared\database\AchieveTitle.h" />
+    <ClInclude Include="..\shared\database\AchieveWar.h" />
+    <ClInclude Include="..\shared\database\BanishOfWinnerNpc.h" />
+    <ClInclude Include="..\shared\database\BattleSet.h" />
+    <ClInclude Include="..\shared\database\ChaosStoneRespawn.h" />
+    <ClInclude Include="..\shared\database\CoefficientSet.h" />
+    <ClInclude Include="..\shared\database\DarkKnightMaterialMonsterDeathSet.h" />
+    <ClInclude Include="..\shared\database\DungeonDefenceMonsterListSet.h" />
+    <ClInclude Include="..\shared\database\DungeonDefenceStageListSet.h" />
+    <ClInclude Include="..\shared\database\EventCswSchedulePlayTimerSet.h" />
+    <ClInclude Include="..\shared\database\EventRoyaleSchedulePlayTimerSet.h" />
+    <ClInclude Include="..\shared\database\EventRoomSchedulePlayTimerSet.h" />
+    <ClInclude Include="..\shared\database\EventScheduleStatusSet.h" />
+    <ClInclude Include="..\shared\database\EventSet.h" />
+    <ClInclude Include="..\shared\database\EventTriggerSet.h" />
+    <ClInclude Include="..\shared\database\GiveItemLuaFunctionSet.h" />
+    <ClInclude Include="..\shared\database\ItemExchangeCrashSet.h" />
+    <ClInclude Include="..\shared\database\ItemExchangeExpSet.h" />
+    <ClInclude Include="..\shared\database\ItemExchangeSet.h" />
+    <ClInclude Include="..\shared\database\ItemExpirationSet.h" />
+    <ClInclude Include="..\shared\database\ItemOpSet.h" />
+    <ClInclude Include="..\shared\database\ItemSellTableSet.h" />
+    <ClInclude Include="..\shared\database\ItemSpecialExchangeSet.h" />
+    <ClInclude Include="..\shared\database\ItemTableSet.h" />
+    <ClInclude Include="..\shared\database\ItemUpgradeSet.h" />
+    <ClInclude Include="..\shared\database\JuraidMountionListInformationSet.h" />
+    <ClInclude Include="..\shared\database\Kill_Random_Gift.h" />
+    <ClInclude Include="..\shared\database\KingCandidacyNoticeBoardSet.h" />
+    <ClInclude Include="..\shared\database\KingElectionListSet.h" />
+    <ClInclude Include="..\shared\database\KingNominationListSet.h" />
+    <ClInclude Include="..\shared\database\KingSystemSet.h" />
+    <ClInclude Include="..\shared\database\KnightRoyaleBeginnerItem.h" />
+    <ClInclude Include="..\shared\database\KnightRoyaleStatSet.h" />
+    <ClInclude Include="..\shared\database\KnightsAllianceSet.h" />
+    <ClInclude Include="..\shared\database\KnightsCapeSet.h" />
+    <ClInclude Include="..\shared\database\KnightsCastellanCapeList.h" />
+    <ClInclude Include="..\shared\database\KnightsRankSet.h" />
+    <ClInclude Include="..\shared\database\KnightsSiegeWar.h" />
+    <ClInclude Include="..\shared\database\KNStartPositionRandomSet.h" />
+    <ClInclude Include="..\shared\database\LevelUpTableSet.h" />
+    <ClInclude Include="..\shared\database\MagicTableSet.h" />
+    <ClInclude Include="..\shared\database\MagicType1Set.h" />
+    <ClInclude Include="..\shared\database\MagicType2Set.h" />
+    <ClInclude Include="..\shared\database\MagicType3Set.h" />
+    <ClInclude Include="..\shared\database\MagicType4Set.h" />
+    <ClInclude Include="..\shared\database\MagicType5Set.h" />
+    <ClInclude Include="..\shared\database\MagicType6Set.h" />
+    <ClInclude Include="..\shared\database\MagicType7Set.h" />
+    <ClInclude Include="..\shared\database\MagicType8Set.h" />
+    <ClInclude Include="..\shared\database\MagicType9Set.h" />
+    <ClInclude Include="..\shared\database\MakeDefensiveTableSet.h" />
+    <ClInclude Include="..\shared\database\MakeGradeItemTableSet.h" />
+    <ClInclude Include="..\shared\database\MakeItemGroupSet.h" />
+    <ClInclude Include="..\shared\database\MakeLareItemTableSet.h" />
+    <ClInclude Include="..\shared\database\MakeWeaponTableSet.h" />
+    <ClInclude Include="..\shared\database\MiningExchange.h" />
+    <ClInclude Include="..\shared\database\MiningFishingTableSet.h" />
+    <ClInclude Include="..\shared\database\MonsterChallenge.h" />
+    <ClInclude Include="..\shared\database\MonsterChallengeSummonList.h" />
+    <ClInclude Include="..\shared\database\MonsterItemSet.h" />
+    <ClInclude Include="..\shared\database\MonsterResourceSet.h" />
+    <ClInclude Include="..\shared\database\MonsterRespawnStableListSet.h" />
+    <ClInclude Include="..\shared\database\MonsterRespawnVeriableListSet.h" />
+    <ClInclude Include="..\shared\database\MonsterUnderTheCastleSet.h" />
+    <ClInclude Include="..\shared\database\MonsterStoneListInformationSet.h" />
+    <ClInclude Include="..\shared\database\ChaosStoneSummonList.h" />
+    <ClInclude Include="..\shared\database\MonsterSummonListSet.h" />
+    <ClInclude Include="..\shared\database\NpcItemSet.h" />
+    <ClInclude Include="..\shared\database\NpcPosSet.h" />
+    <ClInclude Include="..\shared\database\NpcTableSet.h" />
+    <ClInclude Include="..\shared\database\ObjectPosSet.h" />
+    <ClInclude Include="..\shared\database\PetStatsInfo.h" />
+    <ClInclude Include="..\shared\database\PetTransformSet.h" />
+    <ClInclude Include="..\shared\database\PremiumBonusItemSet.h" />
+    <ClInclude Include="..\shared\database\PremiumItemExpSet.h" />
+    <ClInclude Include="..\shared\database\PremiumItemSet.h" />
+    <ClInclude Include="..\shared\database\QuestHelperSet.h" />
+    <ClInclude Include="..\shared\database\QuestMonsterSet.h" />
+    <ClInclude Include="..\shared\database\RentalItemSet.h" />
+    <ClInclude Include="..\shared\database\ReturnLetterGiftItemSet.h" />
+    <ClInclude Include="..\shared\database\ServerResourceSet.h" />
+    <ClInclude Include="..\shared\database\SetItemTableSet.h" />
+    <ClInclude Include="..\shared\database\StartPositionRandomSet.h" />
+    <ClInclude Include="..\shared\database\StartPositionSet.h" />
+    <ClInclude Include="..\shared\database\UserDailyOpSet.h" />
+    <ClInclude Include="..\shared\database\UserItemSet.h" />
+    <ClInclude Include="..\shared\database\UserKnightsRankSet.h" />
+    <ClInclude Include="..\shared\database\UserPersonalRankSet.h" />
+    <ClInclude Include="..\shared\database\CharacterSealSet.h" />
+    <ClInclude Include="..\shared\database\ZoneInfoSet.h" />
+    <ClInclude Include="BotHandler.h" />
+    <ClInclude Include="ChatHandler.h" />
+    <ClInclude Include="ConsoleColor.h" />
+    <ClInclude Include="ConsoleInputThread.h" />
+    <ClInclude Include="DatabaseThread.h" />
+    <ClInclude Include="DBAgent.h" />
+    <ClInclude Include="Define.h" />
+    <ClInclude Include="GameServerDlg.h" />
+    <ClInclude Include="GameDefine.h" />
+    <ClInclude Include="GameEvent.h" />
+    <ClInclude Include="md5.h" />
+    <ClInclude Include="Me.h" />
+    <ClInclude Include="NpcDefines.h" />
+    <ClInclude Include="NpcTable.h" />
+    <ClInclude Include="PathFind.h" />
+    <ClInclude Include="KingSystem.h" />
+    <ClInclude Include="KnightLogger.h" />
+    <ClInclude Include="Knights.h" />
+    <ClInclude Include="KnightsManager.h" />
+    <ClInclude Include="LoadServerData.h" />
+    <ClInclude Include="LuaEngine.h" />
+    <ClInclude Include="lua_bindings.h" />
+    <ClInclude Include="MagicInstance.h" />
+    <ClInclude Include="MagicProcess.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="Npc.h" />
+    <ClInclude Include="NpcSignalling.h" />
+    <ClInclude Include="NpcThread.h" />
+    <ClInclude Include="Region.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SheriffReportListSet.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TheYNG.cpp" />
+    <ClInclude Include="Unit.h" />
+    <ClInclude Include="User.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RES\GameServer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="RES\GameServer.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

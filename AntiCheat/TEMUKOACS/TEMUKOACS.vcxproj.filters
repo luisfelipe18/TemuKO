@@ -1,0 +1,915 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\N3SDK">
+      <UniqueIdentifier>{ecb7c1b7-9901-41fb-81b4-c2ff5a02de76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine">
+      <UniqueIdentifier>{baff0416-3c60-4721-8276-c1accc7e9b03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{c9d3a34f-731f-48c5-be6b-09f1bdecd5a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GUI">
+      <UniqueIdentifier>{1bb522ae-a4eb-4893-bb92-d1d2986b57d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GUI">
+      <UniqueIdentifier>{417c0b88-6531-4a41-b70f-e19f8efaf7ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\3rd">
+      <UniqueIdentifier>{665c43ac-96f8-4605-b0e6-8471044bbb11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\3rd">
+      <UniqueIdentifier>{497a32aa-25fc-4ea7-9dfb-ccd75c11be57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TableSDK">
+      <UniqueIdentifier>{2174bebd-dda0-407e-9645-013507ee70b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TableSDK\TBL">
+      <UniqueIdentifier>{cb699e0d-65b2-4620-998c-a51158c47541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UIFHook">
+      <UniqueIdentifier>{40a09669-f2c5-4bbe-b0a4-17e2a63d2ab1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Models">
+      <UniqueIdentifier>{85437c4c-0b07-408d-92f5-d18b8f06c283}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\N3BASE">
+      <UniqueIdentifier>{f6980163-c2fe-4246-9afc-6aaad94e2df5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI">
+      <UniqueIdentifier>{220e4dea-e4f9-4449-8887-5be88ee3991e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI\UIF">
+      <UniqueIdentifier>{79a92f7a-a216-418b-978e-00de1ac2f1fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI\UIF\DropList">
+      <UniqueIdentifier>{0f24906b-bae3-4a7a-a287-b7ad3875ae8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI\UIF\PowerUpStore">
+      <UniqueIdentifier>{7e3479a6-3063-4a8a-a6cc-4a1555381770}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\SockEngine">
+      <UniqueIdentifier>{2389a939-70ff-46bf-8391-2c9649c75c92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\SockEngine">
+      <UniqueIdentifier>{18467eb0-fb09-439d-a232-0523a7aad1d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Encryption">
+      <UniqueIdentifier>{5fe78934-05b9-4360-b5e4-f9ce5a3b01a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI\UIF\CR">
+      <UniqueIdentifier>{76dfa00b-0447-4a06-ba54-d1a815b6f241}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI\UIF\MerchantList">
+      <UniqueIdentifier>{b13c389b-d143-46c2-89dc-7cc4ef02edfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\AudioBase">
+      <UniqueIdentifier>{05d1530c-ca2d-4f7e-8110-352aacdb2c09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\LicenseEngine">
+      <UniqueIdentifier>{51bb31fc-fe61-430d-a982-b6c498e4ff68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI\UIF\ClanWerehouse">
+      <UniqueIdentifier>{f760553a-316b-4251-a33b-54f0a7001758}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AntiCheat">
+      <UniqueIdentifier>{adf9641a-99af-4f6c-8203-0425d4e4683c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AntiCheat\Header Files">
+      <UniqueIdentifier>{af89c4af-ae74-43a7-95d4-20e6835abe6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AntiCheat\Source Files">
+      <UniqueIdentifier>{ea39effe-5160-4ce7-affd-84e0684bc56c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="md5.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="PearlGui.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Splash.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemOrg.cpp">
+      <Filter>Header Files\TableSDK\TBL</Filter>
+    </ClCompile>
+    <ClCompile Include="TableManager.cpp">
+      <Filter>Header Files\TableSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="StringHelper.cpp">
+      <Filter>Header Files\N3SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="UITargetBar.cpp">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClCompile>
+    <ClCompile Include="UIState.cpp">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClCompile>
+    <ClCompile Include="UITaskbarMain.cpp">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClCompile>
+    <ClCompile Include="UIClanWindow.cpp">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClCompile>
+    <ClCompile Include="UISkillTree.cpp">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\MerchantSlot.cpp">
+      <Filter>Header Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\MerchantInvSlot.cpp">
+      <Filter>Header Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="UITradeItemDisplay.cpp">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClCompile>
+    <ClCompile Include="UIMiniMenu.cpp">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClCompile>
+    <ClCompile Include="UISeedHelper.cpp">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingsManager.cpp">
+      <Filter>Header Files\N3SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="UIGenieSub.cpp">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClCompile>
+    <ClCompile Include="UIWarp.cpp">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClCompile>
+    <ClCompile Include="UIAnvil.cpp">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClCompile>
+    <ClCompile Include="UILogin.cpp">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClCompile>
+    <ClCompile Include="UIPieceChange.cpp">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Header Files\N3SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3UIButton.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3UIEdit.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3UIImage.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3UIList.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3UIProgress.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3UIScrollBar.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3UIStatic.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3UIString.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3UITooltip.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3UITrackBar.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3VMesh.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\LogWriter.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3AlphaPrimitiveManager.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3AnimControl.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3AnimKey.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3Base.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3BaseFileAccess.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3Camera.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3Cloak.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3ColorChange.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3FXPMesh.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3FXPMeshInstance.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3FXShape.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3GlobalEffect.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3IMesh.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3Joint.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3Mesh.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3Texture.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3Transform.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3TransformCollision.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3UIArea.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3UIBase.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\WaveFile.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\DFont.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="UITradePrice.cpp">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClCompile>
+    <ClCompile Include="MerchantManager.cpp">
+      <Filter>Header Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UITradeInventory.cpp">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClCompile>
+    <ClCompile Include="UITradeItemDisplaySpecial.cpp">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalInput.cpp">
+      <Filter>Header Files\N3SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="UIManager.cpp">
+      <Filter>Header Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageBoxUIF.cpp">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClCompile>
+    <ClCompile Include="DropList.cpp">
+      <Filter>Header Files\UI\UIF\DropList</Filter>
+    </ClCompile>
+    <ClCompile Include="N3UIIcon.cpp">
+      <Filter>Header Files\N3SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="UIImageTooltipDlg.cpp">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClCompile>
+    <ClCompile Include="Texts.cpp">
+      <Filter>Header Files\TableSDK\TBL</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerBase.cpp">
+      <Filter>Header Files\N3SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="DropListGroup.cpp">
+      <Filter>Header Files\UI\UIF\DropList</Filter>
+    </ClCompile>
+    <ClCompile Include="TempItemList.cpp">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClCompile>
+    <ClCompile Include="UIState1299.cpp">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClCompile>
+    <ClCompile Include="PowerUpStore.cpp">
+      <Filter>Header Files\UI\UIF\PowerUpStore</Filter>
+    </ClCompile>
+    <ClCompile Include="N3TableBase.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="GMTools.cpp">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClCompile>
+    <ClCompile Include="DropResult.cpp">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClCompile>
+    <ClCompile Include="HDRReader.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="CSupport.cpp">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClCompile>
+    <ClCompile Include="CTopLeft.cpp">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClCompile>
+    <ClCompile Include="UIEventNotice.cpp">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClCompile>
+    <ClCompile Include="StatPreset.cpp">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillPreset.cpp">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClCompile>
+    <ClCompile Include="PearlAPI.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="JobChange.cpp">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClCompile>
+    <ClCompile Include="SockEngine.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="CircularBuffer.cpp">
+      <Filter>Source Files\Engine\SockEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="UITooltip.cpp">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClCompile>
+    <ClCompile Include="CREvent.cpp">
+      <Filter>Header Files\UI\UIF\CR</Filter>
+    </ClCompile>
+    <ClCompile Include="CRRewards.cpp">
+      <Filter>Header Files\UI\UIF\CR</Filter>
+    </ClCompile>
+    <ClCompile Include="UIVoteBoard.cpp">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClCompile>
+    <ClCompile Include="UIInventory.cpp">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClCompile>
+    <ClCompile Include="UIHPBar.cpp">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClCompile>
+    <ClCompile Include="MerchantList.cpp">
+      <Filter>Header Files\UI\UIF\MerchantList</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3PMeshInstance.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3PMesh.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3PMeshCreate.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="N3BASE\N3UIWndBase.cpp">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="CLifeSkill.cpp">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClCompile>
+    <ClCompile Include="HideCore.cpp">
+      <Filter>Source Files\3rd</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchMonster.cpp">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClCompile>
+    <ClCompile Include="JoinBoard.cpp">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioRecorder.cpp">
+      <Filter>Header Files\AudioBase</Filter>
+    </ClCompile>
+    <ClCompile Include="CVoiceSettings.cpp">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClCompile>
+    <ClCompile Include="LicenseEngine.cpp">
+      <Filter>Header Files\LicenseEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="WaveCodec.cpp">
+      <Filter>Header Files\AudioBase</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioListener.cpp">
+      <Filter>Header Files\AudioBase</Filter>
+    </ClCompile>
+    <ClCompile Include="UIParty.cpp">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClCompile>
+    <ClCompile Include="UIWareHouseDlg.cpp">
+      <Filter>Header Files\UI\UIF\ClanWerehouse</Filter>
+    </ClCompile>
+    <ClCompile Include="AntiRE.cpp">
+      <Filter>Source Files\AntiCheat\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SellModuleCheck.cpp">
+      <Filter>Source Files\AntiCheat\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="globals.cpp">
+      <Filter>Source Files\AntiCheat\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AntiDebugger.cpp">
+      <Filter>Source Files\AntiCheat\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AntiVirtualHandler.cpp">
+      <Filter>Source Files\AntiCheat\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SecurtyHandler.cpp">
+      <Filter>Source Files\AntiCheat\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DumpScan.cpp">
+      <Filter>Source Files\AntiCheat\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIMiniTaskbarMain.cpp">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClCompile>
+    <ClCompile Include="Army Guard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmyGuard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmyGuardHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmyGuardSecurty.cpp">
+      <Filter>Source Files\AntiCheat\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmyGuardPacketHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet.h">
+      <Filter>Header Files\N3SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="ByteBuffer.h">
+      <Filter>Header Files\N3SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="types.h">
+      <Filter>Header Files\N3SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="md5.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="PearlGui.h">
+      <Filter>Header Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Splash.h">
+      <Filter>Header Files\3rd</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemOrg.h">
+      <Filter>Header Files\TableSDK\TBL</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomStringList.h">
+      <Filter>Header Files\TableSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="TableManager.h">
+      <Filter>Header Files\TableSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="StringHelper.h">
+      <Filter>Header Files\N3SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="My_3DStruct.h">
+      <Filter>Header Files\N3SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="UIBase.h">
+      <Filter>Header Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="UITargetBar.h">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClInclude>
+    <ClInclude Include="UIState.h">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClInclude>
+    <ClInclude Include="UITaskbarMain.h">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClInclude>
+    <ClInclude Include="UIClanWindow.h">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClInclude>
+    <ClInclude Include="UISkillTree.h">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClInclude>
+    <ClInclude Include="UITradeItemDisplay.h">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\MerchantSlot.h">
+      <Filter>Header Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\MerchantInvSlot.h">
+      <Filter>Header Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="UIMiniMenu.h">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClInclude>
+    <ClInclude Include="UISeedHelper.h">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClInclude>
+    <ClInclude Include="SettingsManager.h">
+      <Filter>Header Files\N3SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="UIGenieSub.h">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClInclude>
+    <ClInclude Include="UIWarp.h">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClInclude>
+    <ClInclude Include="UIAnvil.h">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClInclude>
+    <ClInclude Include="UILogin.h">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClInclude>
+    <ClInclude Include="UIPieceChange.h">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Header Files\N3SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3UIBase.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3UIButton.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3UIDBCLButton.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3UIDef.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3UIEdit.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3UIIcon.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3UIImage.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3UIList.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3UIManager.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3UIProgress.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3UIScrollBar.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3UIStatic.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3UIString.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3UITooltip.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3UITrackBar.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3UIWndBase.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3VMesh.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3WorldBase.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3WorldManager.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\Pick.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\StreamSoundObj.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\DFont.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3AlphaPrimitiveManager.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3AnimatedTexures.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3AnimControl.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3AnimKey.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3Base.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3BaseFileAccess.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3Board.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3Camera.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3Cloak.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3ColorChange.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3EffectWave2.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3Eng.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3EngTool.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3FXDef.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3FXGroup.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3FXMgr.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3FXPlug.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3FXPMesh.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3FXPMeshInstance.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3FXShape.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3GlobalEffect.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3GlobalEffectMng.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3IME.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3IMesh.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3Joint.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3Mesh.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3Mng.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3Scene.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3Snd3dObj.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3SndEng.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3TableBase.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3Texture.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3Transform.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3TransformCollision.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3UIArea.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\GameDef.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\LogWriter.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\WaveFile.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="UITradePrice.h">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClInclude>
+    <ClInclude Include="MerchantManager.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UITradeInventory.h">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClInclude>
+    <ClInclude Include="UITradeItemDisplaySpecial.h">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalInput.h">
+      <Filter>Header Files\N3SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="UIManager.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageBoxUIF.h">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClInclude>
+    <ClInclude Include="DropList.h">
+      <Filter>Header Files\UI\UIF\DropList</Filter>
+    </ClInclude>
+    <ClInclude Include="UIImageTooltipDlg.h">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClInclude>
+    <ClInclude Include="Texts.h">
+      <Filter>Header Files\TableSDK\TBL</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerBase.h">
+      <Filter>Header Files\N3SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="DropListGroup.h">
+      <Filter>Header Files\UI\UIF\DropList</Filter>
+    </ClInclude>
+    <ClInclude Include="TempItemList.h">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClInclude>
+    <ClInclude Include="UIState1299.h">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClInclude>
+    <ClInclude Include="PowerUpStore.h">
+      <Filter>Header Files\UI\UIF\PowerUpStore</Filter>
+    </ClInclude>
+    <ClInclude Include="GMTools.h">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClInclude>
+    <ClInclude Include="DropResult.h">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClInclude>
+    <ClInclude Include="HDRReader.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="CSupport.h">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClInclude>
+    <ClInclude Include="CTopLeft.h">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClInclude>
+    <ClInclude Include="UIEventNotice.h">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClInclude>
+    <ClInclude Include="xorstr.h">
+      <Filter>Header Files\3rd</Filter>
+    </ClInclude>
+    <ClInclude Include="StatPreset.h">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillPreset.h">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClInclude>
+    <ClInclude Include="PearlAPI.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="JobChange.h">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClInclude>
+    <ClInclude Include="SockEngine.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="CircularBuffer.h">
+      <Filter>Header Files\Engine\SockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="atomic.h">
+      <Filter>Header Files\Engine\SockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketDefines.h">
+      <Filter>Header Files\Engine\SockEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="UITooltip.h">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClInclude>
+    <ClInclude Include="encrypt.h">
+      <Filter>Header Files\Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="UIVoteBoard.h">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClInclude>
+    <ClInclude Include="CREvent.h">
+      <Filter>Header Files\UI\UIF\CR</Filter>
+    </ClInclude>
+    <ClInclude Include="CRRewards.h">
+      <Filter>Header Files\UI\UIF\CR</Filter>
+    </ClInclude>
+    <ClInclude Include="UIInventory.h">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClInclude>
+    <ClInclude Include="UIHPBar.h">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClInclude>
+    <ClInclude Include="MerchantList.h">
+      <Filter>Header Files\UI\UIF\MerchantList</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3PMeshCreate.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3PMeshInstance.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="N3BASE\N3PMesh.h">
+      <Filter>Header Files\N3BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="CLifeSkill.h">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClInclude>
+    <ClInclude Include="HideCore.h">
+      <Filter>Header Files\3rd</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchMonster.h">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClInclude>
+    <ClInclude Include="JoinBoard.h">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioRecorder.h">
+      <Filter>Header Files\AudioBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CVoiceSettings.h">
+      <Filter>Header Files\UI\UIF</Filter>
+    </ClInclude>
+    <ClInclude Include="LicenseEngine.h">
+      <Filter>Header Files\LicenseEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="WaveCodec.h">
+      <Filter>Header Files\AudioBase</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioListener.h">
+      <Filter>Header Files\AudioBase</Filter>
+    </ClInclude>
+    <ClInclude Include="UIParty.h">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClInclude>
+    <ClInclude Include="UIWareHouseDlg.h">
+      <Filter>Header Files\UI\UIF\ClanWerehouse</Filter>
+    </ClInclude>
+    <ClInclude Include="va_g729a.h">
+      <Filter>Header Files\AudioBase</Filter>
+    </ClInclude>
+    <ClInclude Include="AntiRE.h">
+      <Filter>Source Files\AntiCheat\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorMessage.h">
+      <Filter>Source Files\AntiCheat\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SecurtyHandler.h">
+      <Filter>Source Files\AntiCheat\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MD6.h">
+      <Filter>Source Files\AntiCheat\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UIMiniTaskbarMain.h">
+      <Filter>Header Files\UIFHook</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmyGuard Engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

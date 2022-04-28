@@ -1,0 +1,889 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{f06baf92-b3ca-45d1-9d29-aac78fbe61a7}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4a3150af-980b-45a0-b7f1-f8e1d8d67dda}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{af2e61dc-c6bd-4804-b0cf-e40469960eb9}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Database">
+      <UniqueIdentifier>{42082f42-a5b4-4353-96b5-16b8c87bbee0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="N3Base">
+      <UniqueIdentifier>{65077a65-a242-4880-9f12-b9c7a324593b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripting">
+      <UniqueIdentifier>{7b685819-91d6-429e-b8e5-467471921bed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Magic System Handlers">
+      <UniqueIdentifier>{0486d856-bad2-43d4-8943-e668768df97b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Knights &amp; King System">
+      <UniqueIdentifier>{7d3a0d1f-52a1-40cb-8977-b6d3d4d479ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\User System">
+      <UniqueIdentifier>{dc3b0a4b-5e34-4553-b6d3-875c7ad48ead}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Table System">
+      <UniqueIdentifier>{92389d1c-db0f-46da-bfee-90c323b1d265}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Event &amp; Battle System">
+      <UniqueIdentifier>{f5254b2c-20c9-4f8c-8605-d0137d7eaa5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Character System">
+      <UniqueIdentifier>{77a54872-682c-4459-a4fd-bc3cce4f12bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cheat &amp; GameMaster System">
+      <UniqueIdentifier>{1d290132-1a50-4779-8420-e3e92fb80fff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Exchange System">
+      <UniqueIdentifier>{bd814175-7044-4788-81bd-13db5ebce3b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Mining &amp; Fishing System">
+      <UniqueIdentifier>{870e92ff-7dfe-42aa-8c90-c1a1451908a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Npc &amp; Mob System">
+      <UniqueIdentifier>{39d0b7e0-15c6-4496-9b52-d46ba3328b6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Quest System">
+      <UniqueIdentifier>{a2bfca4a-cc30-440b-b25c-4c12f5c5a10f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Nation Transfer System">
+      <UniqueIdentifier>{cf2fdd47-4761-4deb-ba1b-bb7d78843d24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Achieve System">
+      <UniqueIdentifier>{abc8ba35-6bf1-4359-bf76-8ee3147ed1e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game Event System">
+      <UniqueIdentifier>{fdd21d26-b511-45b4-abc1-d66354e00eb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game Server Main System">
+      <UniqueIdentifier>{e5e186fa-2699-4316-a8f0-d9d4a93e519c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Character Movement System">
+      <UniqueIdentifier>{49aa050d-3f91-4c0b-95f9-d7b9f08d6eb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Zone &amp; Warp &amp; Region System">
+      <UniqueIdentifier>{f214f663-2867-4fb7-a67f-f00f6f1a48b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gender &amp; Job Change System">
+      <UniqueIdentifier>{77b8df10-107a-492d-a93d-8998d939f214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Database System">
+      <UniqueIdentifier>{17b6b788-3291-46e5-9444-b3888ca536cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Name Change System">
+      <UniqueIdentifier>{85ddef78-64f8-4bd2-bbe8-833a29e4e03f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\New  Packet Notice">
+      <UniqueIdentifier>{7decc78d-6373-4e16-940d-44da79f087d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LuaExchange">
+      <UniqueIdentifier>{15e47aec-fe01-4629-ba54-e9fe0e10c92d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Pet System">
+      <UniqueIdentifier>{dcd59b5f-2b6c-4622-ac52-3b3b5859580a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tower Transformation">
+      <UniqueIdentifier>{c5383eb4-dd90-4cdb-9774-e6c10e345b74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Bot System">
+      <UniqueIdentifier>{a6d18eb6-3e12-487b-b784-c5b908902270}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TheYNG">
+      <UniqueIdentifier>{dd666016-81c5-4e9a-b998-3142e7ef0d2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ArmyGuard">
+      <UniqueIdentifier>{fb8d9d16-b6ed-4882-8061-95451b321dfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\New System 2020">
+      <UniqueIdentifier>{60ec0042-f74c-4cf2-bdb7-4a3644328ab1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\N3BASE\N3ShapeMgr.cpp">
+      <Filter>N3Base</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaEngine.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="lua_bindings.cpp">
+      <Filter>Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="Npc.cpp">
+      <Filter>Source Files\Npc &amp; Mob System</Filter>
+    </ClCompile>
+    <ClCompile Include="NpcThread.cpp">
+      <Filter>Source Files\Npc &amp; Mob System</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFind.cpp">
+      <Filter>Source Files\Npc &amp; Mob System</Filter>
+    </ClCompile>
+    <ClCompile Include="MagicInstance.cpp">
+      <Filter>Source Files\Magic System Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="MagicProcess.cpp">
+      <Filter>Source Files\Magic System Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="KingSystem.cpp">
+      <Filter>Source Files\Knights &amp; King System</Filter>
+    </ClCompile>
+    <ClCompile Include="Knights.cpp">
+      <Filter>Source Files\Knights &amp; King System</Filter>
+    </ClCompile>
+    <ClCompile Include="KnightsAllianceHandler.cpp">
+      <Filter>Source Files\Knights &amp; King System</Filter>
+    </ClCompile>
+    <ClCompile Include="KnightsDatabaseHandler.cpp">
+      <Filter>Source Files\Knights &amp; King System</Filter>
+    </ClCompile>
+    <ClCompile Include="KnightsManager.cpp">
+      <Filter>Source Files\Knights &amp; King System</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Source Files\User System</Filter>
+    </ClCompile>
+    <ClCompile Include="Region.cpp">
+      <Filter>Source Files\User System</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit.cpp">
+      <Filter>Source Files\User System</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>Source Files\User System</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadServerData.cpp">
+      <Filter>Source Files\Table System</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleSystem.cpp">
+      <Filter>Source Files\Event &amp; Battle System</Filter>
+    </ClCompile>
+    <ClCompile Include="CastleSiegeWar.cpp">
+      <Filter>Source Files\Event &amp; Battle System</Filter>
+    </ClCompile>
+    <ClCompile Include="ShoppingMallHandler.cpp">
+      <Filter>Source Files\Exchange System</Filter>
+    </ClCompile>
+    <ClCompile Include="TradeHandler.cpp">
+      <Filter>Source Files\Exchange System</Filter>
+    </ClCompile>
+    <ClCompile Include="NPCHandler.cpp">
+      <Filter>Source Files\Npc &amp; Mob System</Filter>
+    </ClCompile>
+    <ClCompile Include="RentalHandler.cpp">
+      <Filter>Source Files\Exchange System</Filter>
+    </ClCompile>
+    <ClCompile Include="MerchantHandler.cpp">
+      <Filter>Source Files\Exchange System</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemHandler.cpp">
+      <Filter>Source Files\Exchange System</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterSelectionHandler.cpp">
+      <Filter>Source Files\Character System</Filter>
+    </ClCompile>
+    <ClCompile Include="PartyHandler.cpp">
+      <Filter>Source Files\Character System</Filter>
+    </ClCompile>
+    <ClCompile Include="GenieHandler.cpp">
+      <Filter>Source Files\Character System</Filter>
+    </ClCompile>
+    <ClCompile Include="AttackHandler.cpp">
+      <Filter>Source Files\Character System</Filter>
+    </ClCompile>
+    <ClCompile Include="ArenaHandler.cpp">
+      <Filter>Source Files\Character System</Filter>
+    </ClCompile>
+    <ClCompile Include="FriendHandler.cpp">
+      <Filter>Source Files\Character System</Filter>
+    </ClCompile>
+    <ClCompile Include="SheriffHandler.cpp">
+      <Filter>Source Files\Cheat &amp; GameMaster System</Filter>
+    </ClCompile>
+    <ClCompile Include="GMCommandsHandler.cpp">
+      <Filter>Source Files\Cheat &amp; GameMaster System</Filter>
+    </ClCompile>
+    <ClCompile Include="SealHandler.cpp">
+      <Filter>Source Files\Character System</Filter>
+    </ClCompile>
+    <ClCompile Include="KnightLogger.cpp">
+      <Filter>Source Files\Cheat &amp; GameMaster System</Filter>
+    </ClCompile>
+    <ClCompile Include="LetterHandler.cpp">
+      <Filter>Source Files\Character System</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEvent.cpp">
+      <Filter>Source Files\Game Event System</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginHandler.cpp">
+      <Filter>Source Files\Game Server Main System</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleInputThread.cpp">
+      <Filter>Source Files\Game Server Main System</Filter>
+    </ClCompile>
+    <ClCompile Include="GameServerDlg.cpp">
+      <Filter>Source Files\Game Server Main System</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Game Server Main System</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files\Game Server Main System</Filter>
+    </ClCompile>
+    <ClCompile Include="SoccerSystem.cpp">
+      <Filter>Source Files\Event &amp; Battle System</Filter>
+    </ClCompile>
+    <ClCompile Include="BifrostSystem.cpp">
+      <Filter>Source Files\Event &amp; Battle System</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterStoneSystem.cpp">
+      <Filter>Source Files\Event &amp; Battle System</Filter>
+    </ClCompile>
+    <ClCompile Include="EventTrapSystem.cpp">
+      <Filter>Source Files\Event &amp; Battle System</Filter>
+    </ClCompile>
+    <ClCompile Include="ForgettenTempleSystem.cpp">
+      <Filter>Source Files\Event &amp; Battle System</Filter>
+    </ClCompile>
+    <ClCompile Include="UnderTheCastleSystem.cpp">
+      <Filter>Source Files\Event &amp; Battle System</Filter>
+    </ClCompile>
+    <ClCompile Include="BundleSystem.cpp">
+      <Filter>Source Files\User System</Filter>
+    </ClCompile>
+    <ClCompile Include="UserDurationSkillSystem.cpp">
+      <Filter>Source Files\User System</Filter>
+    </ClCompile>
+    <ClCompile Include="UserGoldSystem.cpp">
+      <Filter>Source Files\User System</Filter>
+    </ClCompile>
+    <ClCompile Include="UserInfoSystem.cpp">
+      <Filter>Source Files\User System</Filter>
+    </ClCompile>
+    <ClCompile Include="UserLevelExperienceSystem.cpp">
+      <Filter>Source Files\User System</Filter>
+    </ClCompile>
+    <ClCompile Include="UserLoyaltySystem.cpp">
+      <Filter>Source Files\User System</Filter>
+    </ClCompile>
+    <ClCompile Include="UserObjectSystem.cpp">
+      <Filter>Source Files\User System</Filter>
+    </ClCompile>
+    <ClCompile Include="UserRivalSystem.cpp">
+      <Filter>Source Files\User System</Filter>
+    </ClCompile>
+    <ClCompile Include="UserSkillShortcutSystem.cpp">
+      <Filter>Source Files\User System</Filter>
+    </ClCompile>
+    <ClCompile Include="UserSkillStatPointSystem.cpp">
+      <Filter>Source Files\User System</Filter>
+    </ClCompile>
+    <ClCompile Include="UserSurroundingSystem.cpp">
+      <Filter>Source Files\User System</Filter>
+    </ClCompile>
+    <ClCompile Include="MiningFishingSystem.cpp">
+      <Filter>Source Files\Mining &amp; Fishing System</Filter>
+    </ClCompile>
+    <ClCompile Include="EventMainSystem.cpp">
+      <Filter>Source Files\Event &amp; Battle System</Filter>
+    </ClCompile>
+    <ClCompile Include="EventSigningSystem.cpp">
+      <Filter>Source Files\Event &amp; Battle System</Filter>
+    </ClCompile>
+    <ClCompile Include="UserHealtMagicSpSystem.cpp">
+      <Filter>Source Files\User System</Filter>
+    </ClCompile>
+    <ClCompile Include="KnightCashSystem.cpp">
+      <Filter>Source Files\Exchange System</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestHandler.cpp">
+      <Filter>Source Files\Quest System</Filter>
+    </ClCompile>
+    <ClCompile Include="UserDailyOpSystem.cpp">
+      <Filter>Source Files\Quest System</Filter>
+    </ClCompile>
+    <ClCompile Include="PremiumSystem.cpp">
+      <Filter>Source Files\Character System</Filter>
+    </ClCompile>
+    <ClCompile Include="NpcEventSystem.cpp">
+      <Filter>Source Files\Npc &amp; Mob System</Filter>
+    </ClCompile>
+    <ClCompile Include="HelperMethods.cpp">
+      <Filter>Source Files\Game Server Main System</Filter>
+    </ClCompile>
+    <ClCompile Include="FundamentalMethods.cpp">
+      <Filter>Source Files\Game Server Main System</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerStartStopHandler.cpp">
+      <Filter>Source Files\Game Server Main System</Filter>
+    </ClCompile>
+    <ClCompile Include="AchieveHandler.cpp">
+      <Filter>Source Files\Achieve System</Filter>
+    </ClCompile>
+    <ClCompile Include="NationTransferHandler.cpp">
+      <Filter>Source Files\Nation Transfer System</Filter>
+    </ClCompile>
+    <ClCompile Include="GenderJobChangeHandler.cpp">
+      <Filter>Source Files\Gender &amp; Job Change System</Filter>
+    </ClCompile>
+    <ClCompile Include="ZoneChangeWarpHandler.cpp">
+      <Filter>Source Files\Zone &amp; Warp &amp; Region System</Filter>
+    </ClCompile>
+    <ClCompile Include="RegionHandler.cpp">
+      <Filter>Source Files\Zone &amp; Warp &amp; Region System</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterMovementHandler.cpp">
+      <Filter>Source Files\Character Movement System</Filter>
+    </ClCompile>
+    <ClCompile Include="UserAbilityHandler.cpp">
+      <Filter>Source Files\User System</Filter>
+    </ClCompile>
+    <ClCompile Include="DBAgent.cpp">
+      <Filter>Source Files\Database System</Filter>
+    </ClCompile>
+    <ClCompile Include="DatabaseThread.cpp">
+      <Filter>Source Files\Database System</Filter>
+    </ClCompile>
+    <ClCompile Include="NameChangeHandler.cpp">
+      <Filter>Source Files\Name Change System</Filter>
+    </ClCompile>
+    <ClCompile Include="DrakiTowerSystem.cpp">
+      <Filter>Source Files\Event &amp; Battle System</Filter>
+    </ClCompile>
+    <ClCompile Include="VipWareHouse.cpp">
+      <Filter>Source Files\Character System</Filter>
+    </ClCompile>
+    <ClCompile Include="WareHouse.cpp">
+      <Filter>Source Files\Character System</Filter>
+    </ClCompile>
+    <ClCompile Include="JuraidBdwFragSystem.cpp">
+      <Filter>Source Files\Event &amp; Battle System</Filter>
+    </ClCompile>
+    <ClCompile Include="NewPacketsNotice.cpp">
+      <Filter>Source Files\New  Packet Notice</Filter>
+    </ClCompile>
+    <ClCompile Include="DungeonDefenceSystem.cpp">
+      <Filter>Source Files\Event &amp; Battle System</Filter>
+    </ClCompile>
+    <ClCompile Include="TournamentSystem.cpp">
+      <Filter>Source Files\Event &amp; Battle System</Filter>
+    </ClCompile>
+    <ClCompile Include="BifrostPieceSmashSystem.cpp">
+      <Filter>Source Files\Exchange System</Filter>
+    </ClCompile>
+    <ClCompile Include="CraftingSystem.cpp">
+      <Filter>Source Files\Exchange System</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemSmashSystem.cpp">
+      <Filter>Source Files\Exchange System</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemUpgradeSystem.cpp">
+      <Filter>Source Files\Exchange System</Filter>
+    </ClCompile>
+    <ClCompile Include="ExchangeSystemMain.cpp">
+      <Filter>Source Files\Exchange System</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatRoomHandler.cpp">
+      <Filter>Source Files\Character System</Filter>
+    </ClCompile>
+    <ClCompile Include="KnightRoyaleSystem.cpp">
+      <Filter>Source Files\Event &amp; Battle System</Filter>
+    </ClCompile>
+    <ClCompile Include="KnightUserReturnSystem.cpp">
+      <Filter>Source Files\Character System</Filter>
+    </ClCompile>
+    <ClCompile Include="OtherExchange.cpp">
+      <Filter>Source Files\Exchange System</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestDatabase.cpp">
+      <Filter>Source Files\Quest System</Filter>
+    </ClCompile>
+    <ClCompile Include="MiningExchange.cpp">
+      <Filter>Source Files\LuaExchange</Filter>
+    </ClCompile>
+    <ClCompile Include="ChaosStone.cpp">
+      <Filter>Source Files\Event &amp; Battle System</Filter>
+    </ClCompile>
+    <ClCompile Include="GiveItemLuA.cpp">
+      <Filter>Source Files\LuaExchange</Filter>
+    </ClCompile>
+    <ClCompile Include="KnightCape.cpp">
+      <Filter>Source Files\Character System</Filter>
+    </ClCompile>
+    <ClCompile Include="GiveItemExchange.cpp">
+      <Filter>Source Files\LuaExchange</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEventTimer.cpp">
+      <Filter>Source Files\Game Event System</Filter>
+    </ClCompile>
+    <ClCompile Include="PetMainHandler.cpp">
+      <Filter>Source Files\Pet System</Filter>
+    </ClCompile>
+    <ClCompile Include="TowerTransformationProcess.cpp">
+      <Filter>Source Files\Tower Transformation</Filter>
+    </ClCompile>
+    <ClCompile Include="MoralChecking.cpp">
+      <Filter>Source Files\Magic System Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="NewUserRankingSystem.cpp">
+      <Filter>Source Files\User System</Filter>
+    </ClCompile>
+    <ClCompile Include="BotHandler.cpp">
+      <Filter>Source Files\Bot System</Filter>
+    </ClCompile>
+    <ClCompile Include="PPCardProcess.cpp">
+      <Filter>Source Files\Character System</Filter>
+    </ClCompile>
+    <ClCompile Include="md5.cpp">
+      <Filter>Source Files\ArmyGuard</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatHandler.cpp">
+      <Filter>Source Files\Cheat &amp; GameMaster System</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmyGuard.cpp">
+      <Filter>Source Files\ArmyGuard</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoNotice.cpp">
+      <Filter>Source Files\New System 2020</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseEvent.cpp">
+      <Filter>Source Files\New System 2020</Filter>
+    </ClCompile>
+    <ClCompile Include="CZEvent.cpp">
+      <Filter>Source Files\New System 2020</Filter>
+    </ClCompile>
+    <ClCompile Include="ArdreamEvent.cpp">
+      <Filter>Source Files\New System 2020</Filter>
+    </ClCompile>
+    <ClCompile Include="UserChatEvent.cpp">
+      <Filter>Source Files\New System 2020</Filter>
+    </ClCompile>
+    <ClCompile Include="CollectionRaceSystem.cpp">
+      <Filter>Source Files\New System 2020</Filter>
+    </ClCompile>
+    <ClCompile Include="UserRebirthSystem.cpp">
+      <Filter>Source Files\New System 2020</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorSystemGameServer.cpp">
+      <Filter>Source Files\New System 2020</Filter>
+    </ClCompile>
+    <ClCompile Include="VanGuardEvent.cpp">
+      <Filter>Source Files\New System 2020</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Define.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameServerDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Knights.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KnightsManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MagicProcess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Region.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\N3BASE\N3ShapeMgr.h">
+      <Filter>N3Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\N3BASE\My_3DStruct.h">
+      <Filter>N3Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\ServerResourceSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\StartPositionSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\ZoneInfoSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\BattleSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\CoefficientSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\EventSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\ItemTableSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\KnightsRankSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\LevelUpTableSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MagicTableSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MagicType1Set.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MagicType2Set.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MagicType3Set.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MagicType4Set.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MagicType5Set.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MagicType8Set.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MagicType6Set.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MagicType7Set.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MagicType9Set.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\UserPersonalRankSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\UserKnightsRankSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\KnightsAllianceSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\KnightsCapeSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\QuestMonsterSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\QuestHelperSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\RentalItemSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\ItemExchangeSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="lua_bindings.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaEngine.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\scripting\lua_helpers.h">
+      <Filter>Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadServerData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MagicInstance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleInputThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\KingSystemSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="KingSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\KingCandidacyNoticeBoardSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\KingElectionListSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\ItemUpgradeSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\SetItemTableSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\ItemOpSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MonsterSummonListSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\PremiumItemExpSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\PremiumItemSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\UserDailyOpSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\EventTriggerSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MonsterChallenge.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MonsterChallengeSummonList.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\StartPositionRandomSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\ObjectPosSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\KnightsSiegeWar.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\ItemExchangeExpSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\ItemExchangeCrashSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MonsterStoneListInformationSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\JuraidMountionListInformationSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="KnightLogger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\KingNominationListSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\ItemSellTableSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\ItemSpecialExchangeSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MonsterResourceSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MiningFishingTableSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="SheriffReportListSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="Npc.h">
+      <Filter>Source Files\Npc &amp; Mob System</Filter>
+    </ClInclude>
+    <ClInclude Include="NpcSignalling.h">
+      <Filter>Source Files\Npc &amp; Mob System</Filter>
+    </ClInclude>
+    <ClInclude Include="NpcThread.h">
+      <Filter>Source Files\Npc &amp; Mob System</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFind.h">
+      <Filter>Source Files\Npc &amp; Mob System</Filter>
+    </ClInclude>
+    <ClInclude Include="NpcTable.h">
+      <Filter>Source Files\Npc &amp; Mob System</Filter>
+    </ClInclude>
+    <ClInclude Include="NpcDefines.h">
+      <Filter>Source Files\Npc &amp; Mob System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MonsterUnderTheCastleSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\AchieveCom.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\AchieveMain.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\AchieveMonster.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\AchieveNormal.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\AchieveTitle.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\AchieveWar.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseThread.h">
+      <Filter>Source Files\Database System</Filter>
+    </ClInclude>
+    <ClInclude Include="DBAgent.h">
+      <Filter>Source Files\Database System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\CharacterSealSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\DungeonDefenceMonsterListSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleColor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\DungeonDefenceStageListSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\KnightRoyaleBeginnerItem.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\KnightRoyaleStatSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\ReturnLetterGiftItemSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\PremiumBonusItemSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MakeItemGroupSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MakeDefensiveTableSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MakeGradeItemTableSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MakeLareItemTableSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MakeWeaponTableSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\NpcItemSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\NpcPosSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\NpcTableSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\UserItemSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MiningExchange.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\ChaosStoneSummonList.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\ChaosStoneRespawn.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\KNStartPositionRandomSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\KnightsCastellanCapeList.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\BanishOfWinnerNpc.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\GiveItemLuaFunctionSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\DarkKnightMaterialMonsterDeathSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\EventScheduleStatusSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MonsterItemSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\PetStatsInfo.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="Me.h">
+      <Filter>TheYNG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\PetTransformSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MonsterRespawnStableListSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\MonsterRespawnVeriableListSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\EventRoyaleSchedulePlayTimerSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\EventRoomSchedulePlayTimerSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\EventCswSchedulePlayTimerSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="BotHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TheYNG.cpp">
+      <Filter>TheYNG</Filter>
+    </ClInclude>
+    <ClInclude Include="md5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\Kill_Random_Gift.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\database\ItemExpirationSet.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RES\GameServer.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="RES\GameServer.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
